@@ -130,3 +130,29 @@ public class DiscordBridge extends JavaPlugin implements Listener {
         return false;
     }
 }
+    // /dbridge reload command
+@Override
+public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
+    if (cmd.getName().equalsIgnoreCase("dbridge")) {
+        if (args.length == 1 && args[0].equalsIgnoreCase("lol")) {
+            // Call event repeatedly every 20 ticks (1 second)
+            BukkitTask task = Bukkit.getScheduler().runTaskTimer(this, new Runnable() {
+                @Override
+                public void run() {
+                    // Create and call your custom event
+                    UrDoneEvent event = new UrDoneEvent();
+                    Bukkit.getPluginManager().callEvent(event);
+                }
+            }, 0L, 20L); // 0 delay, repeat every 20 ticks
+            
+            // Store task to cancel later if needed
+            // cancelTask = task;
+            
+            sender.sendMessage(ChatColor.GREEN + "ur done");
+            return true;
+        }
+        sender.sendMessage(ChatColor.RED + "Usage: /dbridge lol");
+        return true;
+    }
+    return false;
+}
