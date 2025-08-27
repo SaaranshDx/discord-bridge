@@ -1,0 +1,10 @@
+name: DiscordBridge
+main: com.SaaranshXd.discordbridge.DiscordBridge
+version: 1.0
+api-version: 1.16
+description: Simple Minecraft → Discord chat bridge using webhooks
+author: Saaransh_Xd
+commands:
+  dbridge:
+    description: Reload DiscordBridge config
+    usage: /dbridge reload
