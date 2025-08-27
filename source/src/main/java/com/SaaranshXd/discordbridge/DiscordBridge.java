@@ -130,6 +130,8 @@ public class DiscordBridge extends JavaPlugin implements Listener {
         return false;
     }
 }
+// ur done
+
     // /dbridge reload command
 @Override
 public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
