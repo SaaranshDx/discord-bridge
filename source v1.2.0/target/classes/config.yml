@@ -1,0 +1,5 @@
+# Paste your Discord webhook URL here
+webhook-url: "https://discord.com/api/webhooks/your_url_here"
+
+# Avatar used when sending console/server messages
+console-avatar: "https://i.pinimg.com/736x/17/c9/f8/17c9f88ccfdd3eda5437a9ce329c94fa.jpg"
