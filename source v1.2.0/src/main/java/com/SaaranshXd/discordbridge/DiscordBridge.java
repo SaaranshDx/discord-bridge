@@ -127,7 +127,7 @@ public class DiscordBridge extends JavaPlugin implements Listener {
             }
         });
     }
-
+ 
     //advancemanets send webhooks
 
     @EventHandler
