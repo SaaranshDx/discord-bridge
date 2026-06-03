@@ -6,7 +6,7 @@
 
     <groupId>com.saaranshxd.discordbridge</groupId>
     <artifactId>discordbridge</artifactId>
-    <version>1.9-beta</version>
+    <version>1.21.11</version>
     <packaging>jar</packaging>
 
     <name>discordbridge</name>
